@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-size: 18px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #444;
+            border: 1px solid #666;
+            border-radius: 4px;
+            color: white;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Book an Appointment for a Custom PC Build</h2>
+        <form action="https://formspree.io/f/xrbpzzep" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="budget">Your Budget for the Computer:</label>
+            <input type="text" id="budget" name="budget" required><br><br>
+
+            <label for="phone">Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" value="614-619-2159" required><br><br>
+
+            <label for="message">Additional Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Confirm Appointment</button>
+        </form>
+    </div>
+</body>
+</html>
